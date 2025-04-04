@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função atv3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+            padding: 50px;
+            color: #8b0a50;
+        }
+        button {
+            background: linear-gradient(45deg, #ff9a9e, #ff6a88);
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(255, 105, 135, 0.5);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="mensagem">Bom dia!</p>
+    <button onclick="mudartexto()">Alterar texto</button>
+    <button onclick="mudarFonte()">Alterar Fonte</button>
+    <button onclick="mudarFundo()">Alterar Fundo</button>
+    <button onclick="exibirAlerta()">Mostrar Alerta</button>
+    <button onclick="Restaurar()">Restaurar</button>
+    <script src="Funcao.js"></script>
+</body>
+</html>

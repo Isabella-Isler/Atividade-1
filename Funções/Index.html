@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+
+    <h1>Exemplo de Função Interativa</h1>
+    <button onclick="mudarTexto()">Mudar Texto</button>
+    <button onclick="mudarFundo()">Mudar Fundo da Página</button>
+    <P id="mensagem">Texto Inicial</P>
+
+    <script>
+        function mudarTexto() {
+            document.getElementById("mensagem").innerText = "Texto alterado com sucesso!";
+        }
+
+        function mudarFundo() {
+            document.body.style.backgroundColor = "lightblue";
+            document.getElementById("mensagem").innerText = "Fundo da página alterado";
+        }
+    </script>
+
+</body>
+</html>
